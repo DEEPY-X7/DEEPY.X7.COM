@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "python-variables",
+    "title": "Python Variables",
+    "stage": "Stage 1 — Python for Machine Learning",
+    "summary": "Understand variables, data types, and memory references in Python.",
+    "youtubeId": "rfscVS0vtbw",
+    "code": "x = 42\nmodel_name = 'linear_regression'\nlearning_rate = 0.01\nprint(f'{model_name}: lr={learning_rate}')",
+    "intuition": "Variables are containers for values. In ML workflows, you constantly tune variables like learning_rate, epochs, and batch_size.",
+    "downloadUrl": "/downloads/ml-complete-notes.pdf",
+    "visualization": "vector"
+  },
+  {
+    "slug": "numpy-arrays",
+    "title": "NumPy Arrays",
+    "stage": "Stage 1 — Python for Machine Learning",
+    "summary": "Work with efficient arrays for numerical ML computation.",
+    "youtubeId": "QUT1VHiLmmI",
+    "code": "import numpy as np\nfeatures = np.array([[1.2, 3.1], [0.7, 2.8]])\nweights = np.array([0.4, 0.9])\npredictions = features @ weights\nprint(predictions)",
+    "intuition": "Arrays let you process many values at once. This vectorized style is the backbone of fast ML and deep learning.",
+    "downloadUrl": "/downloads/ml-complete-notes.pdf",
+    "visualization": "vector"
+  },
+  {
+    "slug": "vectors",
+    "title": "Vectors",
+    "stage": "Stage 2 — Mathematics for Machine Learning",
+    "summary": "Build geometric intuition for vectors in feature spaces.",
+    "youtubeId": "fNk_zzaMoSs",
+    "code": "import numpy as np\nv = np.array([3, 4])\nlength = np.linalg.norm(v)\nprint(length)",
+    "intuition": "Each ML example can be seen as a vector of features. Geometry helps you understand distances and similarities.",
+    "downloadUrl": "/downloads/ml-complete-notes.pdf",
+    "visualization": "vector"
+  },
+  {
+    "slug": "dot-product",
+    "title": "Dot Product",
+    "stage": "Stage 2 — Mathematics for Machine Learning",
+    "summary": "Measure alignment and combine weighted features.",
+    "youtubeId": "LyGKycYT2v0",
+    "code": "import numpy as np\nx = np.array([2, 1, 3])\nw = np.array([0.5, -1.2, 0.8])\nscore = np.dot(x, w)\nprint(score)",
+    "intuition": "A dot product tells you how aligned two vectors are. Linear models use it to turn features into predictions.",
+    "downloadUrl": "/downloads/ml-complete-notes.pdf",
+    "visualization": "dot"
+  },
+  {
+    "slug": "gradient-descent",
+    "title": "Gradient Descent",
+    "stage": "Stage 3 — Machine Learning Algorithms",
+    "summary": "Learn iterative optimization for minimizing model error.",
+    "youtubeId": "sDv4f4s2SB8",
+    "code": "w = 10\nlearning_rate = 0.1\nfor step in range(5):\n    grad = 2 * w\n    w = w - learning_rate * grad\n    print(step, w)",
+    "intuition": "Gradient descent follows the slope downhill. Repeating small updates improves model parameters over time.",
+    "downloadUrl": "/downloads/ml-complete-notes.pdf",
+    "visualization": "gradient"
+  },
+  {
+    "slug": "linear-regression",
+    "title": "Linear Regression",
+    "stage": "Stage 3 — Machine Learning Algorithms",
+    "summary": "Fit a line to model relationships between variables.",
+    "youtubeId": "nk2CQITm_eo",
+    "code": "from sklearn.linear_model import LinearRegression\nX = [[1], [2], [3], [4]]\ny = [2, 4, 6, 8]\nmodel = LinearRegression().fit(X, y)\nprint(model.coef_, model.intercept_)",
+    "intuition": "Linear regression finds the best-fitting line by minimizing squared error. It is the foundation for more advanced ML models.",
+    "downloadUrl": "/downloads/ml-complete-notes.pdf",
+    "visualization": "boundary"
+  }
+]

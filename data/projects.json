@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "house-price-prediction",
+    "title": "House Price Prediction",
+    "summary": "Predict housing prices with regression techniques.",
+    "stack": ["Python", "Pandas", "scikit-learn"],
+    "problem": "Estimate house sale prices from features like area, rooms, and neighborhood.",
+    "dataset": "Kaggle Housing Prices dataset with structured tabular features.",
+    "implementation": "Clean data, encode categorical columns, train linear and tree-based regressors, and compare RMSE.",
+    "results": "Gradient boosting reduced RMSE by 22% compared to baseline linear regression."
+  },
+  {
+    "slug": "spam-classifier",
+    "title": "Spam Classifier",
+    "summary": "Classify messages as spam or ham using NLP features.",
+    "stack": ["Python", "scikit-learn", "NLTK"],
+    "problem": "Filter spam SMS messages automatically.",
+    "dataset": "SMS Spam Collection dataset with labeled text messages.",
+    "implementation": "Apply TF-IDF vectorization and train Naive Bayes + Logistic Regression for comparison.",
+    "results": "Best model achieved 98% accuracy with strong recall on spam class."
+  },
+  {
+    "slug": "customer-segmentation",
+    "title": "Customer Segmentation",
+    "summary": "Group customers by behavior using unsupervised learning.",
+    "stack": ["Python", "NumPy", "scikit-learn"],
+    "problem": "Identify meaningful customer segments for targeted campaigns.",
+    "dataset": "Mall Customers dataset containing annual income and spending score.",
+    "implementation": "Scale features, use K-means clustering, and evaluate cluster quality using silhouette score.",
+    "results": "Found 4 actionable clusters supporting targeted marketing strategy."
+  },
+  {
+    "slug": "image-classification",
+    "title": "Image Classification",
+    "summary": "Classify images using a convolutional neural network.",
+    "stack": ["Python", "PyTorch", "CNN"],
+    "problem": "Predict object category from image pixels.",
+    "dataset": "CIFAR-10 image dataset with 10 object classes.",
+    "implementation": "Train a lightweight CNN with data augmentation and early stopping.",
+    "results": "Model reached 82% validation accuracy with strong generalization."
+  }
+]
